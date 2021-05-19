@@ -1,23 +1,17 @@
-import * as firebase from "firebase";
+import firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyCwOKcnI4XTkgxIDZMz5D-NwaQfKnPImk0",
-  authDomain: "signal-clone-4e213.firebaseapp.com",
-  projectId: "signal-clone-4e213",
-  storageBucket: "signal-clone-4e213.appspot.com",
-  messagingSenderId: "870653434368",
-  appId: "1:870653434368:web:304627767d85816bcb16e5",
-};
-let app;
-if (firebase.apps.length === 0) {
-  app = firebase.intializeApp(firebaseConfig);
-} else {
-  app = firebase.app();
-}
+const app = firebase.initializeApp({
+  apiKey: "AIzaSyBd53V-2vroMZ0rL8kmwcNkmp1OLtb4HOc",
+  authDomain: "signal-clone-yt-bulid-758fe.firebaseapp.com",
+  projectId: "signal-clone-yt-bulid-758fe",
+  storageBucket: "signal-clone-yt-bulid-758fe.appspot.com",
+  messagingSenderId: "683198001409",
+  appId: "1:683198001409:web:20fc51ae6702c93d5e2b00",
+});
 
+export const auth = app.auth();
 const db = app.firestore();
-const auth = firebase.auth();
 
-export { db, auth };
+export default { app, db };

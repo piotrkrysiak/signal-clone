@@ -5,6 +5,8 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import LoginScreen from "./screens/LoginScreen";
 import RegisterScreen from "./screens/RegisterScreen";
+import HomeScreen from "./screens/HomeScreen";
+
 //expo CLI to update
 //expo only work in cmd (not in powershel)
 
@@ -25,6 +27,7 @@ export default function App() {
           component={RegisterScreen}
           options={{ gestureEnabled: true }} //is true by default on ios
         />
+        <Stack.Screen name="Home" component={HomeScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
