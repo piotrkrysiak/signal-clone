@@ -6,9 +6,11 @@ import { createStackNavigator } from "@react-navigation/stack";
 import LoginScreen from "./screens/LoginScreen";
 import RegisterScreen from "./screens/RegisterScreen";
 import HomeScreen from "./screens/HomeScreen";
+import AddChatScreen from "./screens/AddChatScreen";
 
 //expo CLI to update
 //expo only work in cmd (not in powershel)
+//upload photo
 
 const Stack = createStackNavigator();
 const globalScreenOptions = {
@@ -28,6 +30,7 @@ export default function App() {
           options={{ gestureEnabled: true }} //is true by default on ios
         />
         <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="AddChat" component={AddChatScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
