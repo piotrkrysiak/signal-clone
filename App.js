@@ -12,6 +12,7 @@ import ChatScreen from "./screens/ChatScreen";
 //expo CLI to update
 //expo only work in cmd (not in powershel)
 //upload photo
+//2.43.00
 
 const Stack = createStackNavigator();
 const globalScreenOptions = {
