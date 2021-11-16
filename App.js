@@ -1,6 +1,4 @@
-// import "react-native-gesture-handler"; //don't work?
 import React from "react";
-import { StatusBar } from "expo-status-bar";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import LoginScreen from "./screens/LoginScreen";
@@ -8,11 +6,6 @@ import RegisterScreen from "./screens/RegisterScreen";
 import HomeScreen from "./screens/HomeScreen";
 import AddChatScreen from "./screens/AddChatScreen";
 import ChatScreen from "./screens/ChatScreen";
-
-//expo CLI to update
-//expo only work in cmd (not in powershel)
-//upload photo
-//2.43.00
 
 const Stack = createStackNavigator();
 const globalScreenOptions = {

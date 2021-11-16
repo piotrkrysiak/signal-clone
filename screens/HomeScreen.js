@@ -1,7 +1,5 @@
 import React, { useLayoutEffect, useState, useEffect } from "react";
-import { SafeAreaView } from "react-native";
-import { TouchableOpacity } from "react-native";
-import { StyleSheet, ScrollView, Text, View } from "react-native";
+import { StyleSheet, ScrollView,  View, TouchableOpacity,SafeAreaView } from "react-native";
 import { Avatar } from "react-native-elements/dist/avatar/Avatar";
 import CustomListItem from "../components/CustomListItem";
 import { AntDesign, SimpleLineIcons } from "@expo/vector-icons";

@@ -1,18 +1,17 @@
 import React, { useState, useEffect } from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, KeyboardAvoidingView, Platform } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { Button, Input, Image } from "react-native-elements";
-import { KeyboardAvoidingView, Platform } from "react-native";
 import { auth } from "../firebase";
 
 const LoginScreen = ({ navigation }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  
+
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
       if (authUser) {
-        navigation.navigate("Home"); //replace
+        navigation.navigate("Home");
       }
     });
     return unsubscribe;
